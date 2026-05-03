@@ -101,7 +101,7 @@ ClearCollect(
     )
 )
 ```
-The formula iterates over the gallery items, extracts the binary image data as Base64 using JSON() with the IncludeBinaryData flag, then uses MatchAll() to parse the resulting string and saves the file name and its Base64 content to the colFileContents collection.
+The formula iterates over the gallery items, extracts the binary image data as Base64 using `JSON()` with the IncludeBinaryData flag, then uses `MatchAll()` to parse the resulting string and saves the file name and its Base64 content to the colFileContents collection.
 
 
 ![Use formula to convert appres Value to base64 in on select save button control](./images/save-button-on-select.png)
