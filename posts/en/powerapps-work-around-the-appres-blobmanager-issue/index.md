@@ -20,7 +20,7 @@ draft: true
 
 ## Problem description
 
-If you've ever tried to add an attachment control in Power Apps and save the uploaded file to SharePoint using Power Automate, you've probably run into a frustrating problem. When a user selects a file, its value (Value) is temporarily stored in an internal Power Apps format  as a link starting with `appres://blobmanager/...`. It seems harmless enough, until you actually try to send that file somewhere.
+If you've ever tried to add an attachment control in Power Apps and save the uploaded file to SharePoint using Power Automate, you've probably run into a frustrating problem. When a user selects a file, its value is temporarily stored in an internal Power Apps format  as a link starting with `appres://blobmanager/...`. It seems harmless enough, until you actually try to send that file somewhere.
 The problem is that Power Automate cannot "fetch" a file from such an address. It is purely an internal temporary identifier that Power Automate has serious trouble interpreting. As a result, the flow either throws an error or an empty and corrupted file ends up on SharePoint.
 
 
